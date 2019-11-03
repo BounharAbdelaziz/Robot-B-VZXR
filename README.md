@@ -49,13 +49,7 @@ initialisé par 0** car le robot naît toujours la tête vers le haut.
 Selon la valeur de D le robot avancerait soit suivant l’axe des X ou celui des
 Y.
 
-Y
-
->   \-1 D = 0 +1
-
->   X D = 3 D = 1
-
-D = 2
+![](media/modelisation.png)
 
 **D = 0** signifie que le robot est dirigé vers le **Haut**, dans le cas où il
 aurait à se déplacer il va le faire selon la direction de l’axe des Y croissant.
@@ -120,7 +114,7 @@ la variable D de 1 (un quart de tour à gauche) puis fait appel à la fonction
 *deplacement* qui se chargera de changer les valeurs de X et Y dépendamment des
 valeurs actuelles de X, Y, D et k.
 
-## Exemple illustratif ##
+## Exemple illustratif
 
 Considérons la suite des instructions suivante pour un univers de taille 6\*4 :
 
@@ -151,7 +145,7 @@ C’est bien ce que renvoie la fonction pour cet exemple.
 
 ![](media/bed181721f11b8e727306ded0d6e15d0.png)
 
-## Programme principale ##
+## 4. Programme principale ##
 
 ![](media/503f9eca9e9eb654b2de6828f20b6e96.png)
 

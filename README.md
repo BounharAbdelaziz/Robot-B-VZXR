@@ -1,6 +1,6 @@
-**Abdelaziz BOUNHAR C-Ways**
+**Abdelaziz BOUNHAR                                                 C-Ways**
 
-**Robot B-VZXR**
+# Robot B-VZXR #
 
 Le but de l'exercice est d’écrire un programme en **Python** qui crée un
 **univers** dont les paramètres de dimensions sont définis dans un fichier
@@ -8,13 +8,14 @@ texte, ensuite le programme devra lire **une suite d'instructions** à partir
 d’un autre fichier texte pour arriver déterminer la position finale du Robot
 B-VZXR.
 
-1.  **Initialisation de l’univers**
+## 1. Initialisation de l’univers ##
 
-![](media/38a84ce36f69463230f7f9115b32a80c.png)
 
 L’univers est défini par le fichier universe.txt, ce dernier explique le
 **Width** et le **Height** de notre univers et associe à chacune d’elle une
 valeur entière.
+
+![](media/38a84ce36f69463230f7f9115b32a80c.png)
 
 Il faudra alors une fonction qui lie ce fichier et récupère les valeurs pour les
 assigner à nos deux variables qui décrivent le Width et le Height de notre
@@ -23,7 +24,7 @@ fichier depuis lequel les paramètre doivent être récupérées.
 
 ![](media/b9a92aa8b653587f06a1457694c53c2b.png)
 
-1.  **Langage du Robot B-VZXR**
+## 2. Langage du Robot B-VZXR ##
 
 Le Robot B-VZXR comprend un seul langage qui lui permet de se déplacer et ce
 selon un seul type d’instruction. Chaque instruction se constitue de deux
@@ -32,7 +33,7 @@ de pas d’avancement** du robot. Il exécute alors séquentiellement la suite
 d’instruction qu’on lui donne en commençant toujours par la case du bas à gauche
 de coordonnées (0,0).
 
-1.  **Déplacement du Robot B-VZXR**
+## 3. Déplacement du Robot B-VZXR ##
 
 Le Robots B-VZXR se déplace suivant le sens et le nombre k de cases qu’il a lu
 depuis le fichier des instructions.
@@ -119,7 +120,7 @@ la variable D de 1 (un quart de tour à gauche) puis fait appel à la fonction
 *deplacement* qui se chargera de changer les valeurs de X et Y dépendamment des
 valeurs actuelles de X, Y, D et k.
 
--   **Exemple illustratif **
+## Exemple illustratif ##
 
 Considérons la suite des instructions suivante pour un univers de taille 6\*4 :
 
@@ -150,14 +151,14 @@ C’est bien ce que renvoie la fonction pour cet exemple.
 
 ![](media/bed181721f11b8e727306ded0d6e15d0.png)
 
-1.  **Programme principale**
+## Programme principale ##
 
 ![](media/503f9eca9e9eb654b2de6828f20b6e96.png)
 
 On charge les valeurs **N** et **P** des dimensions de notre univers, puis on
 initialise la position du robot par (0,0) et sa direction initiale vers le haut
 (D=0), et puis on fait appel à la fonction *getPositionFinale* qui prend en
-paramètre les variables D, X et Y et nous donne en retour la position finale du
+paramètre les variables **D**, **X** et **Y** et nous donne en retour la position finale du
 robot.
 
 En utilisant le fichier d’instructions ‘instrucion_list.txt’ le résultat est :
